@@ -3,6 +3,7 @@
 ## Server Endpoints
 
 
+
 ### Registration
 *This endpoint is used to register the user and add them to the database*
 
@@ -21,6 +22,7 @@ Required data: `username`: string 3 character min, 18 character max, `password`:
 - `201`, User has been created
 - `406`, Invalid characters or not enough characters
 - `500`, Server error. Please try again
+
 
 
 ### Login
@@ -43,6 +45,7 @@ Required data: `username`: string 3 character min, 18 character max, `password`:
 - `500`, Server error. Please try again
 
 
+
 ### Save Comment
 *This endpoint is to add a comment to the users saved comments list*
 
@@ -63,6 +66,7 @@ Required data: `commentid`: , `username`:
 - `500`, Server error. Please try again
 
 
+
 ### Delete Saved Comment
 *This endpoint is to unsave a comment from the users saved comments list*
 
@@ -81,6 +85,7 @@ Required data: `commentid`: , `username`:
   comment: example_savedcomment
 }
 ```
+
 
 
 ## Database Information
