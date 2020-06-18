@@ -56,7 +56,7 @@ Required data: `commentid`: , `username`:
 ```
 {
   username: example_username,
-  comment: example_savedcomment
+  commentid: example_savedcommentid
 }
 ```
 
@@ -82,7 +82,7 @@ Required data: `commentid`: , `username`:
 ```
 {
   username: example_username,
-  comment: example_savedcomment
+  commentid: example_savedcommentid
 }
 ```
 
