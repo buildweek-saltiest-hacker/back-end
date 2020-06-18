@@ -15,7 +15,6 @@ Required data: `username`: string 3 character min, 18 character max, `password`:
   username: example_username,
   password: example_password
 }
-
 ```
 
 **Status Codes**
@@ -36,7 +35,6 @@ Required data: `username`: string 3 character min, 18 character max, `password`:
   username: example_username,
   password: example_password
 }
-
 ```
 
 **Status Codes**
@@ -89,8 +87,7 @@ Required data: `commentid`: , `username`:
 
 User Information 
 
+
 ```
-
-
 
 ```
