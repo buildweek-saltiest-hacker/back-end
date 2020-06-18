@@ -90,9 +90,22 @@ Required data: `commentid`: , `username`:
 
 ## Database Information
 
-User Information 
+
+### User Information Table
 
 
-```
+id | username | password
+-- | -------- | --------
+autoincrement, unique id | example_username | example_password
 
-```
+
+### Comment Information Table
+
+
+id | commentid | comment_data | user_id
+-- | -------- | -------- | -----
+autoincrement, unique id | commentid | example_comment string | associateduser
+
+
+
+
