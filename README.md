@@ -96,7 +96,7 @@ Required data: `commentid`: , `username`:
 
 id | username | password
 -- | -------- | --------
-autoincrement, unique id | example_username | example_password
+autoincrement, unique id | required, unique example_username | required example_password
 
 
 ### Comment Information Table
@@ -104,7 +104,7 @@ autoincrement, unique id | example_username | example_password
 
 id | commentid | comment_data | user_id
 -- | -------- | -------- | -----
-autoincrement, unique id | commentid | example_comment string | associateduser
+autoincrement, unique id | required commentid | required example_comment string | required, foreign_key associateduser
 
 
 
