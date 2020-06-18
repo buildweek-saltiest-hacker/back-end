@@ -62,7 +62,7 @@ Required data: `commentid`: , `username`:
 
 **Status Codes**
 - `200`, Comment added
-- `406`, Invalid comment saved. Data error. 
+- `400`, Invalid comment saved. Data error. 
 - `500`, Server error. Please try again
 
 
@@ -76,7 +76,7 @@ Required data: `commentid`: , `username`:
 
 **Status Codes**
 - `200`, Comment added
-- `406`, Invalid comment deleted. Data error. 
+- `400`, Invalid comment deleted. Data error. 
 - `500`, Server error. Please try again
 
 ```
