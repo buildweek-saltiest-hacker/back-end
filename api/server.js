@@ -1,4 +1,5 @@
-const server = require("express").express();
+const express = require("express") 
+const server = express();
 const cors = require("cors");
 const helmet = require('helmet')
 
@@ -11,7 +12,7 @@ server.use(cors())
 server.use(helmet())
 
 server.use('/api/auth', authRouter)
-server.use('/api/actions', authFn, actionsRouter)
+server.use('/api/actions', actionsRouter)
 
 
 server.get('/', (req, res) => {
