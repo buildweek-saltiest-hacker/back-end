@@ -16,7 +16,7 @@ server.use('/api/actions', actionsRouter)
 
 
 server.get('/', (req, res) => {
-    console.log('it is working!')
+    res.send('Hello World!')
 } )
 
 module.exports = server

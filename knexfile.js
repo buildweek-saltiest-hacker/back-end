@@ -16,7 +16,6 @@ module.exports = {
     migrations: {
       directory: './database/development/migrations'
     },
-
     seeds: {
       directory: './database/development/seeds'
     }
@@ -31,28 +30,27 @@ module.exports = {
       max: 10
     },
     migrations: {
-      directory: './database/staging/migrations'
+      directory: './database/development/migrations'
     },
-    
     seeds: {
-      directory: './database/staging/seeds'
+      directory: './database/development/seeds'
     }
   },
 
-  production: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: 'knex_migrations'
-    }
-  }
+  // production: {
+  //   client: 'postgresql',
+  //   connection: {
+  //     database: 'my_db',
+  //     user:     'username',
+  //     password: 'password'
+  //   },
+  //   pool: {
+  //     min: 2,
+  //     max: 10
+  //   },
+  //   migrations: {
+  //     tableName: 'knex_migrations'
+  //   }
+  // }
 
 };
