@@ -10,6 +10,7 @@ const secret = process.env.JWT_SECRET
 
 router.post('/register', (req, res) => {
     console.log('here...')
+    authMethods.deleteComment()
 })
 
 router.post('/login', (req, res) => {
