@@ -23,19 +23,22 @@ module.exports = {
   },
 
   staging: {
-    client: 'pg',
-    connection: process.env.DATABASE_URL,
+
+    client: 'pg', 
+    connection: process.env.DATABASE_URL, 
     pool: {
       min: 2,
       max: 10
     },
     migrations: {
-      directory: './database/development/migrations'
+      directory: './database/development/migrations',
     },
-    seeds: {
+
+    seeds: { 
       directory: './database/development/seeds'
-    }
-  },
+     },
+
+  }
 
   // production: {
   //   client: 'postgresql',
