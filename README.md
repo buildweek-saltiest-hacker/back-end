@@ -44,7 +44,30 @@ Required data: `username`: string 3 character min, 18 character max, `password`:
 - `406`, Invalid characters or not enough characters
 - `500`, Server error. Please try again
 
+### GET Comment
+*This endpoint is to fetch a list of comments that the user has saved*
 
+GET, 'url.com/api/user/comment'
+
+Required data: `commentid`: , `username`: 
+
+```
+{ 
+  {
+    commentid: , 
+    commentdata:
+  }, 
+  {
+    commentid: , 
+    commentdata:
+  }, 
+}
+```
+
+**Status Codes**
+- `200`, Comment added
+- `400`, Invalid comment saved. Data error. 
+- `500`, Server error. Please try again
 
 ### Save Comment
 *This endpoint is to add a comment to the users saved comments list*
