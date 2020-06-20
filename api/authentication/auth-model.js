@@ -1,14 +1,14 @@
 const db = require('../../database/dbConfig')
 
 module.exports = {
-    deleteComment, 
-    saveComment
+    register, 
+    findBy
 }
 
-function addUser(user) {
-    return db('user')
+async function register(user) {
+    return db('users').insert(user, 'id')
 }
 
-function findBy() {
-    return db('user')
+function findBy(filter, value) {
+    return db("users").where(filter, value);
 }

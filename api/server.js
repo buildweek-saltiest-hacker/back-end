@@ -1,4 +1,5 @@
-const server = require("express").express();
+const express = require("express") 
+const server = express();
 const cors = require("cors");
 const helmet = require('helmet')
 
@@ -15,7 +16,7 @@ server.use('/api/actions', authFn, actionsRouter)
 
 
 server.get('/', (req, res) => {
-    console.log('it is working!')
+    res.send('Hello World!')
 } )
 
 module.exports = server
