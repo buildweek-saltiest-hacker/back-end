@@ -6,6 +6,7 @@ exports.up = function(knex) {
         tbl.string("username", 18)
             .notNullable()
             .unique()
+            .index()
         tbl.string("password", 18)
             .notNullable();
     })
