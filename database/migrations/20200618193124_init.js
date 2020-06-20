@@ -20,7 +20,8 @@ exports.up = function(knex) {
     })
     .createTable('comment_user', tbl => {
         tbl.increments();
-        tbl.string("comment_id")
+        tbl.string("comment_id").unsigned()
+        tbl.foreign('comment_id').references('comments.id').onUpdate('CASCADE').onDelete('CASCADE')
             // .unsigned()
             // .notNullable()
             // .references('id')
@@ -28,7 +29,7 @@ exports.up = function(knex) {
             // .onUpdate('CASCADE')
             // .onDelete('CASCADE');
         tbl.integer('user_id').unsigned()
-        tbl.foreign('user_id').references('users.id')
+        tbl.foreign('user_id').references('users.id').onUpdate('CASCADE').onDelete('CASCADE')
             // .unsigned()
             // .notNullable()
             // .references('id')
