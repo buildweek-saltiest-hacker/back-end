@@ -6,7 +6,7 @@ const ActionMethods = require('./actions-model')
 
 router.get('/comment/', async (req, res) => {
     try {
-        const result = await ActionMethods.fetchComment()
+        const result = await ActionMethods.fetchComment(req.decodedJWT.username)
         res.status(200).json( result )
     } catch (err) {
         res.status(500).json({ message: 'Server error. Please try again.' })
