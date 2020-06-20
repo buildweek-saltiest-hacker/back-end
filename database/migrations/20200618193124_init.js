@@ -20,19 +20,19 @@ exports.up = function(knex) {
     .createTable('comment_user', tbl => {
         tbl.increments();
         tbl.string("comment_id")
-            .unsigned()
-            .notNullable()
-            .references('id')
-            .inTable('comments')
-            .onUpdate('CASCADE')
-            .onDelete('CASCADE');
-        tbl.string("user_id")
-            .unsigned()
-            .notNullable()
-            .references('id')
-            .inTable('users')
-            .onUpdate('CASCADE')
-            .onDelete('CASCADE');
+            // .unsigned()
+            // .notNullable()
+            // .references('id')
+            // .inTable('comments')
+            // .onUpdate('CASCADE')
+            // .onDelete('CASCADE');
+        tbl.integer("user_id")
+            // .unsigned()
+            // .notNullable()
+            // .references('id')
+            // .inTable('users')
+            // .onUpdate('CASCADE')
+            // .onDelete('CASCADE');
     })
 };
 
