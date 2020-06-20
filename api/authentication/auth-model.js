@@ -6,8 +6,7 @@ module.exports = {
 }
 
 async function register(user) {
-    const [id] = await db('users').insert(user, 'id').returning('id')
-    return db('user').where({ id }).first()
+    return db('users').insert(user, 'id')
 }
 
 function findBy(filter, value) {
