@@ -12,7 +12,7 @@ server.use(cors())
 server.use(helmet())
 
 server.use('/api/auth', authRouter)
-server.use('/api/actions', actionsRouter)
+server.use('/api/actions', authFn, actionsRouter)
 
 
 server.get('/', (req, res) => {
