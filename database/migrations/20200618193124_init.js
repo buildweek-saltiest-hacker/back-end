@@ -2,7 +2,7 @@
 exports.up = function(knex) {
     return knex.schema
     .createTable("users", tbl => {
-        tbl.increments();
+        tbl.increments('id');
         tbl.string("username", 18)
             .notNullable()
             .unique()
@@ -27,7 +27,8 @@ exports.up = function(knex) {
             // .inTable('comments')
             // .onUpdate('CASCADE')
             // .onDelete('CASCADE');
-        tbl.integer("user_id")
+        tbl.integer('user_id').unsigned()
+        tbl.foreign('user_id').references('users.id')
             // .unsigned()
             // .notNullable()
             // .references('id')
