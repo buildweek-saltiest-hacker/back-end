@@ -2,7 +2,7 @@
 
 ## Production URL
 
-https://dashboard.heroku.com/apps/salty-hackers-ls, henceforth abbreviated as url.com
+https://salty-hackers-ls.herokuapp.com, henceforth abbreviated as url.com
 
 ## Server Endpoints
 
