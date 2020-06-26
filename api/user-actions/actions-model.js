@@ -10,7 +10,7 @@ module.exports = {
 function fetchComment(username) {
     // returns list of comments the user has saved
     const user_id = db('users').where('username', username).select('id')
-    console.log(user_id)
+    // console.log(user_id)
     return db('comments').where('comment_user.user_id', user_id).join('comment_user', 'comment_user.comment_id', 'comments.id').select('comments.commentdata')
 }
 

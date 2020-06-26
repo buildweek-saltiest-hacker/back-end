@@ -4,8 +4,10 @@ const cors = require("cors");
 const helmet = require('helmet')
 
 const actionsRouter = require('./user-actions/actions-router')
-const authRouter = require('./authentication/auth-router')
-const authFn = require('./shared-fns/auth-function')
+const authModule = require('./authentication/auth-router')
+const authRouter = authModule.router
+const authFn = require('./shared-fns/auth-function');
+const router = require("./user-actions/actions-router");
 
 server.use(express.json())
 server.use(cors())

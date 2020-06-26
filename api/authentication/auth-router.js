@@ -67,4 +67,6 @@ function validInput(req, res, next) {
     }
 }
 
-module.exports = router
+module.exports = { 
+    router: router, 
+    validInput: validInput }
